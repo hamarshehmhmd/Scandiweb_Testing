@@ -1,13 +1,11 @@
 [build]
-  command = "npm start"
+  command = "npm install"
   publish = "public"
 
 [[redirects]]
   from = "/*"
-  to = "/index.php"
+  to = "/.netlify/functions/php-server"
   status = 200
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Host = "localhost:3000"
+[functions]
+  directory = "netlify/functions"
