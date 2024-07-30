@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
       console.error(`Error executing PHP file: ${stderr}`);
       callback(null, {
         statusCode: 500,
-        body: stderr,
+        body: `Error executing PHP file: ${stderr}`,
       });
       return;
     }
