@@ -1,0 +1,100 @@
+/* assets/css/styles.css */
+
+/* Bootstrap integration */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+/* Custom styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #343a40;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.product-item {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item p {
+    margin: 5px 0;
+}
+
+.delete-checkbox {
+    margin-bottom: 10px;
+}
+
+button, input[type="submit"] {
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center form styles */
+.centered-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding-top: 80px; /* Adjust for fixed header */
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 60px; /* Adjust for fixed header */
+}
