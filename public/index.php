@@ -18,4 +18,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['mass_delete'])) {
 $products = $productController->getAllProducts();
 
 include 'views/product-list.php';
-?>
+echo "Hello world";
+ ?>
